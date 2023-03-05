@@ -1,5 +1,5 @@
 .data {
-    background-color: #c1c9de;
+    background-color: rgb(255, 255, 255);
     min-height: 110vh;
 }
 
@@ -10,6 +10,10 @@
 
 #map { 
     height: 180px; 
+    margin-bottom: 20rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
 }
 
 .group {

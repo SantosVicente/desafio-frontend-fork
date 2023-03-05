@@ -13,6 +13,7 @@ function Table() {
                 givenName: user.givenName,
                 surname: user.surname,
                 gender: user.gender,
+                streetAddress: user.streetAddress,
                 city: user.city,
                 state: user.state,
                 stateFull: user.stateFull,
@@ -71,18 +72,6 @@ function Table() {
         })
     }
 
-    /*const handleRemove = (id) => {
-        request.delete(`/${parseInt(id)}`)
-          .then(response => {
-            console.log('Dado removido com sucesso:', response.data);
-            setData(data.filter(item => item.id !== id));
-          })
-          .catch(error => {
-            console.error(error);
-          });
-      };
-*/
-
     return (
         <div className='table'>
             <table id='tabela'>
@@ -92,6 +81,7 @@ function Table() {
                         <th>Nome</th>
                         <th>Sobrenome</th>
                         <th>Gênero</th>
+                        <th>Endereço</th>
                         <th>Cidade</th>
                         <th>UF</th>
                         <th>Estado</th>
@@ -109,34 +99,5 @@ function Table() {
         </div>
     );
 }
-
-
-/*
-{coordinators.map((marker, index) => (
-    <Marker key={index} position={[parseFloat(marker.latitude), parseFloat(marker.longitude)]}>
-        <Popup>{marker.city}</Popup>
-    </Marker>
-))}
-
-
-{data.map(item => (
-                        <tr key={item.id}>
-                            <td>{item.givenName}</td>
-                            <td>{item.surname}</td>
-                            <td>{item.gender}</td>
-                            <td>{item.city}</td>
-                            <td>{item.state}</td>
-                            <td>{item.stateFull}</td>
-                            <td>{item.birthday}</td>
-                            <td>{item.kilograms}</td>
-                            <td>{item.centimeters}</td>
-                            <td>{item.latitude}</td>
-                            <td>{item.longitude}</td>
-                            <td>
-                                <a href="#" onClick={() => handleRemove(item.id)}>Remover</a>
-                            </td>
-                        </tr>
-                    ))}
-*/
 
 export default Table

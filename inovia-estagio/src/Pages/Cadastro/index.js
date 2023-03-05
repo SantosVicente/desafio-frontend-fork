@@ -4,29 +4,8 @@ import Header from '../../components/Header'
 import axios from 'axios';
 import React, { useState } from 'react';
 
-function User() {
+function Cadastro() {
     const [data, setData] = useState(null);
-
-    //nome, gênero, endereço, cidade, estado, idade, tipo sanguíneo, peso, altura, latitude e longitude
-
-    /*
-    genre = "male"
-    tittle = "Mr.";
-    name = "Carlos";
-    middleInitial = "R";
-    surname = "Azevedo";
-    address = "Rua Halley 78";
-    city = "Campinas";
-    state = "SP";
-    stateFull = "São Paulo";
-    blood = "B+";
-    kilograms = "81.9";
-    centimeters = "176";
-    latitude = "-22.6597";
-    longitude = "-42.546691";
-*/
-
-    //nome, gênero, endereço, cidade, estado, idade, domínio, latitude e longitude e useragent browser
 
     const [title, setTitle] = useState('');
     const [givenName, setName] = useState('');
@@ -74,8 +53,6 @@ function User() {
                 console.log(error);
             });
     };
-
-    /*para fazer delete se deve passar apenas o /:id do item que deseja excluir*/
 
     return (
 
@@ -156,4 +133,4 @@ function User() {
     );
 }
 
-export default User;
+export default Cadastro;

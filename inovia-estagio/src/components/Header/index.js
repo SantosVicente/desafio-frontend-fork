@@ -15,13 +15,13 @@ function Header() {
                         <Link to="/data" className='btn'>Data</Link>
                     </li>
                     <li>
-                        <Link to="/user" className='btn'>User</Link>
+                        <Link to="/cadastro" className='btn'>Cadastro</Link>
                     </li>
                     <li>
-                        <Link to="/delete" className='btn'>Delete</Link>
+                        <Link to="/search" className='btn'>Pesquisa</Link>
                     </li>
                     <li>
-                        <Link to="/put" className='btn'>PUT</Link>
+                        <Link to="/tabela" className='btn'>Tabela</Link>
                     </li>
                 </ul>
             </nav>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Table from '../../components/table';
 import request from '../../axios/configGet';
 
-function PUT() {
+function Tabela() {
 
     const [id, setId] = useState('');
 
@@ -13,6 +13,7 @@ function PUT() {
         givenName: '',
         surname: '',
         gender: '',
+        streetAddress: '',
         city: '',
         state: '',
         stateFull: '',
@@ -42,7 +43,8 @@ function PUT() {
             <Header />
             <div className='template'>
 
-                <h1>Você está na página de teste de PUT</h1>
+                <h1>Você está na página Tabela e <br/>
+                mudança de informações</h1>
 
                 <h2>Editar Usuário</h2>
                 <form className='form_put' onSubmit={Submit}>
@@ -62,6 +64,10 @@ function PUT() {
                     <div>
                         <label htmlFor="gender">Gênero</label>
                         <input type="text" id="gender" required value={userData.gender} onChange={event => setUserData({ ...userData, gender: event.target.value })} />
+                    </div>
+                    <div>
+                        <label htmlFor="streetAddress">Endereço</label>
+                        <input type="text" id="streetAddress" required value={userData.streetAddress} onChange={event => setUserData({ ...userData, streetAddress: event.target.value })} />
                     </div>
                     <div>
                         <label htmlFor="city">Cidade</label>
@@ -107,4 +113,4 @@ function PUT() {
     );
 }
 
-export default PUT;
+export default Tabela;

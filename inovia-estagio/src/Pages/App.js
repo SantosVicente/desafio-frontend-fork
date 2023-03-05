@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './Home/index'
 import Data from './Data/index';
-import User from './User/index'
-import Delete from './DELETE';
-import PUT from './PUT';
+import Cadastro from './Cadastro/index'
+import Search from './Search';
+import Table from './Table';
 
 
 function App() {
@@ -17,11 +17,11 @@ function App() {
 
           <Route exact path="/data" element={<Data />} > </Route>
 
-          <Route exact path="/user" element={<User />} > </Route>
+          <Route exact path="/cadastro" element={<Cadastro />} > </Route>
 
-          <Route exact path="/delete" element={<Delete />} > </Route>
+          <Route exact path="/search" element={<Search />} > </Route>
 
-          <Route exact path="/put" element={<PUT />} > </Route>
+          <Route exact path="/tabela" element={<Table />} > </Route>
         </Routes>
       </Router>
   );

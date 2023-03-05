@@ -1,0 +1,67 @@
+.form_search {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(79, 79, 79, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    min-width: 15vw;
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form_search .campos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .3rem;
+}
+
+
+.form_search label {
+    font-size: 18px;
+}
+
+.form_search input, .form_search select {
+    margin-bottom: .7rem;
+    background-color: transparent;
+    border: 1px solid rgb(148, 148, 158);
+    outline: none;
+    width: 100%;    
+    font-size: 20px;
+    color: rgb(57, 56, 54);
+    border-radius: 5px;
+    padding: .4rem 0 .4rem .3rem;
+}
+
+.form_search input:focus, .form_search select:focus {
+    transition: .4s;
+    border: 1px solid rgb(70, 70, 214);
+}
+
+#tabela-resultados, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+th {
+    padding: .6rem .5rem;
+}
+
+tbody tr:hover{
+    background-color: aliceblue;
+}
+
+#tabela-resultados{
+    margin-bottom: 2rem;
+}
+
+#tabela-resultados thead {
+    background-color: #162446;
+    color: aliceblue;
+}

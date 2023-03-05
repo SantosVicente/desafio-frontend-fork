@@ -9,12 +9,6 @@ import iconUrl from '../../assets/location-dot-solid.svg';
 
 function Mapa() {
     const [coordinators, setCoordinators] = useState([])
-    const coordenadas = [
-        { latitude: -23.563987, longitude: -46.654015, city: 'São Paulo' },
-        { latitude: -30.034647, longitude: -51.217658, city: 'Porto Alegre' },
-        { latitude: -22.906847, longitude: -43.172897, city: 'Rio de Janeiro' },
-        { latitude: null, longitude: null, city: null }
-    ];
 
     const getPosts = async () => {
         try {
@@ -66,14 +60,5 @@ function Mapa() {
         </MapContainer>
     );
 }
-
-/*
-{coordinators.map((marker, index) => (
-    <Marker key={index} position={[parseFloat(marker.latitude), parseFloat(marker.longitude)]}>
-        <Popup>{marker.city}</Popup>
-    </Marker>
-))}
-
-*/
 
 export default Mapa

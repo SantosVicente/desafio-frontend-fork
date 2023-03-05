@@ -16,8 +16,7 @@ function Data() {
     const getPosts = async () => {
         try {
             const response = await request.get("/"); //acessa através do blogFetch a API e coloca todos os dados na const
-            //var: gender, browserUserAgent, age, 
-
+            
             const data = response.data.map(user => ({
                 gender: user.gender,
                 bloodType: user.bloodType
@@ -89,15 +88,6 @@ function Data() {
             var femaleBloodType = []
             femaleBloodType.push(cont_oPositivo_female, cont_aPositivo_female, cont_bPositivo_female, cont_abPositivo_female, cont_oNegativo_female, cont_bNegativo_female);
 
-            /*
-            console.log(data);
-            console.log(browser);
-            console.log(age);
-            console.log(response);
-            console.log(maleBloodType);
-            console.log(femaleBloodType);
-            */
-
             setPosts(response.data);
             setMaBlood(maleBloodType);
             setFeBlood(femaleBloodType);
@@ -120,6 +110,8 @@ function Data() {
             <div className='template'>
 
                 <h1>Você está na Página de Visualização</h1>
+
+                <h2>Aqui estão alguns dados sobre a tipagem sanguínea das pessoas por gênero</h2>
 
                 <div className='group'>
                     <div className='div_graph'>
@@ -145,12 +137,10 @@ function Data() {
                         />
                     </div>
 
+                    <h2>Estas são as localizações dos usuários cadastrados</h2>
+
                     <div id='map'>
                         <Mapa />
-                    </div>
-
-                    <div className='listarTabela'>
-
                     </div>
                 </div>
             </div>
