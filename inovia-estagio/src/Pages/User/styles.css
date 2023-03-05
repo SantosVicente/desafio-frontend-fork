@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+.forms {
+    padding: 2rem;
+    background: rgba(79, 79, 79, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    min-width: 15vw;
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.forms div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .3rem;
+}
+
+.forms label {
+    font-size: 18px;
+}
+
+.forms input {
+    margin-bottom: .7rem;
+    background-color: transparent;
+    border: 1px solid rgb(148, 148, 158);
+    outline: none;
+    width: 100%;    
+    font-size: 20px;
+    color: rgb(57, 56, 54);
+    border-radius: 5px;
+    padding: .4rem 0 .4rem .3rem;
+}
+
+.forms input:focus {
+    transition: .4s;
+    border: 1px solid rgb(70, 70, 214);
+}
+
+.btn_post {
+    text-decoration: none;
+    margin-top: .7rem;
+    padding: .4rem .6rem;
+    font-size: 17px;
+    border: none;
+    background-image: linear-gradient(75deg, #9340ff, #ff3c5f);
+    color: rgb(240, 248, 255);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn_post:hover {
+    transition: all .4s;
+    transform: scale(1.1);
+}
