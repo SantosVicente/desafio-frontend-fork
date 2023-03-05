@@ -100,7 +100,7 @@ function Search() {
                         <input type="text" id="campoPesquisa" required />
                     </div>
 
-                    <button id='botaoPesquisar' type="submit">Pesquisar</button>
+                    <button className='btn_search' id='botaoPesquisar' type="submit">Pesquisar</button>
                 </form>
 
                 <table id="tabela-resultados">
